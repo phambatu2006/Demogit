@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.menu li {
+    background: gray;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.menu li:hover {
+    background: orange;
+}
+
+.menu li:first-child {
+    color: red;
+}
+
+.menu li:nth-child(2) {
+    color: blue;
+}
+
+.menu li:last-child {
+    color: green;
+}
+
+.menu li::before {
+    content: "+ ";
+    color: white;
+    font-size: 22px;
+}
+
+.menu li::after {
+    content: " -";
+    color: white;
+}
